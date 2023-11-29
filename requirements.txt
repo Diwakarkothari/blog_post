@@ -44,4 +44,4 @@ python-substack
 requests~=2.31.0
 WTForms~=3.0.1
 substack~=0.0.1
-werkzeug~=2.3.7
+werkzeug~=2.2.3
