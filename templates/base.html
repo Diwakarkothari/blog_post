@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <h1>upload file [Only .md Files Allowed]</h1>
+    <form method="post" enctype="multipart/form-data" class="form-signin">
+        {{form.hidden_tag()}}
+        {{form.file()}}
+        <br>
+        <h3>Enter Title for the Article</h3>
+        {{form.title(class ="form-control")}}
+        <br>
+        <br>
+        {{form.image_url.label}}
+        {{form.image_url(class ="form-control")}}
+        <br>
+        <br>
+        {{form.platforms.label}} {{form.platforms(class ="form-control")}}
+        <br>
+        {{form.submit(class ="btn btn-lg btn-block btn-primary")}}
+    </form>
+    </div>
+</body>
+</html>

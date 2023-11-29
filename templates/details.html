@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Details</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+<div class="container">
+    <form method="post" class="form-signin">
+        {{form.hidden_tag()}}
+        <br>
+        {{form.dev_api.label}}
+        {{form.dev_api(class ="form-control")}}
+        <br>
+        <br>
+        {{form.medium_access_key.label}}
+        {{form.medium_access_key(class ="form-control")}}
+        <br>
+        <br>
+        {{form.hashnode_api.label}}
+        {{form.hashnode_api(class ="form-control")}}
+        <br>
+        <br>
+        {{form.hashnode_publication_id.label}}
+        {{form.hashnode_publication_id(class ="form-control")}}
+        <br>
+        <br>
+        {{form.substack_email.label}}
+        {{form.substack_email(class ="form-control")}}
+        <br>
+        <br>
+        {{form.substack_password.label}}
+        {{form.substack_password(class ="form-control")}}
+        <br>
+        <br>
+        {{form.substack_publication_url.label}}
+        {{form.substack_publication_url(class ="form-control")}}
+        <br>
+        <br>
+        {{form.substack_user_id.label}}
+        {{form.substack_user_id(class ="form-control")}}
+        <br>
+        <br>
+        {{form.submit(class ="btn btn-lg btn-block btn-primary")}}
+    </form>
+</div>
+</body>
+</html>
